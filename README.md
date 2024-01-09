@@ -53,3 +53,6 @@ This program was developed during vacations and is unlikely to be kept updated a
 The author has no responsibility for usage of this program. Usage of PCG-play-bot is at your own risk, and the author provides no warranty or guarantee of its performance or effects.
 
 The author disclaims any responsibility for any consequences, including but not limited to penalties or account suspensions, resulting from the use of this bot.
+
+### Contact
+pcgplaybot@gmail.com
