@@ -1,0 +1,327 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+/* Page container */
+
+#outer-container {
+    background-color: #ff444b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#center-container {
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    width: calc(100% - 80px);
+    height: calc(100% - 80px);
+    padding: 20px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Common */
+
+.page-text {
+    font-size: 14px;
+}
+
+.page-text-bold {
+    font-weight: bold;
+}
+
+/* LanguageAndChannel */
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-and-buttons-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+.header-image {
+    height: 125px;
+    width: auto;
+}
+
+.bot-status-controls {
+    display: flex;
+    flex-direction: column;
+}
+
+.control-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 1px;
+    border: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.control-button-active {
+    background-color: #ff444b;
+    cursor: pointer;
+}
+
+.control-button-inactive {
+    background-color: #d9d9d9;
+}
+
+.control-button-active:active {
+    background-color: #ff8084;
+}
+
+.pause-button-icon {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-left: 4px solid;
+    border-right: 4px solid;
+}
+
+.play-button {
+    width: 45px;
+    height: 45px;
+}
+
+.play-button-icon {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 28px;
+    height: 28px;
+}
+
+.play-button-icon::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 0;
+    height: 18px;
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+    border-left: 16px solid;
+    top: 5px;
+    left: 7px;
+}
+
+.stop-button-icon {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: currentColor;
+}
+
+.config-button {
+    padding: 3px;
+    cursor: pointer;
+    border: 2px solid #ff444b;
+    border-radius: 5px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.config-button:active {
+    opacity: 0.6;
+}
+
+.config-button-img {
+    width: 25px;
+    height: 25px;
+}
+
+.connection-status-and-button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #ffb700;
+    margin-bottom: 7px;
+}
+
+.connection-status-container {
+    min-height: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.joined-chat-text {
+    margin-top: -7px;
+}
+
+.joined-chat-span {
+    background-color: #ffdb80;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+
+.connection-button {
+    background-color: #ffb700;
+    color: #333333;
+    padding: 7px 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    min-width: 110px;
+    text-align: center;
+    display: inline-block;
+}
+
+.connection-button:active {
+    background-color: #ffdb80;
+}
+
+
+/* Body */
+
+.body-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 50px;
+    flex: 1;
+}
+
+.body-text-tile {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.spawn-container {
+    margin-bottom: -10px;
+}
+
+.poke-data-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.poke-data-pokedex {
+    margin-top: -15px;
+}
+
+.lists-container {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+.list-container {
+    background-color: #fcfcfc;
+    border-radius: 10px;
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-title {
+    padding: 0 10px 5px 10px;
+    border-bottom: 1px solid #ffb700;
+}
+
+.list {
+    padding: 0 10px 5px 10px;
+    overflow-y: auto;
+    min-height: 75px;
+}
+
+.list::-webkit-scrollbar {
+    width: 5px;
+}
+
+.list::-webkit-scrollbar-track {
+    background: #d9d9d9;
+}
+
+.list::-webkit-scrollbar-thumb {
+    background: #999999;
+}
+
+.list::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+}
+
+.list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: -15px;
+    padding: 0;
+}
+
+.list-item-spacing {
+    margin-right: 3px;
+}
+
+/* Footer */
+
+.footer-container {
+    margin: 0;
+    align-self: flex-end;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.footer-text {
+    font-size: 12px;
+}
+
+.footer-text-anchor {
+    text-decoration-line: underline;
+    color: #0000FF;
+    cursor: pointer
+}
+
+.github-button {
+    border: none;
+    background-color: transparent;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.github-button:active {
+    opacity: 0.6;
+}
+
+.github-image {
+    width: 15px;
+    height: 15px;
+}

@@ -17,7 +17,7 @@ Using this program on an account where there is already a chat bot connected may
 ## Installation
 Follow these steps:
 
-1. Download the latest version for your system [here](https://github.com/Artotim/PCG-play-bot/releases).
+1. Download the latest version for your system [here](https://github.com/PcgPlayBot/PCG-play-bot/releases).
 2. Unpack it.
 3. Run.
 
@@ -26,7 +26,7 @@ You can also compile the program from source following these steps:
 
 1. Clone repo from GitHub:
    ```bash
-   git clone https://github.com/Artotim/PCG-play-bot.git
+   git clone https://github.com/PcgPlayBot/PCG-play-bot.git
    ```
    
 2. Navigate to project source:

@@ -1,0 +1,5 @@
+BOT_STATUS = {
+    "ACTIVE": "ACTIVE",
+    "PAUSED": "PAUSED",
+    "STOPPED": "STOPPED",
+}
