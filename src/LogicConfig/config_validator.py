@@ -116,12 +116,12 @@ config_validator = {
     },
     "stats_balls": {
         "heavy_ball": {
-            "default": 150,
-            "validator": {"type": "int", "min": 100}
+            "default": 100,
+            "validator": {"type": "int", "min": 50}
         },
         "feather_ball": {
-            "default": 75,
-            "validator": {"type": "int", "min": 0, "max": 150}
+            "default": 50,
+            "validator": {"type": "int", "min": 0, "max": 100}
         },
         "heal_ball": {
             "default": 150,
