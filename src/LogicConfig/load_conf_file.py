@@ -115,7 +115,7 @@ def validate_bool_value(value, default_value):
 def validate_str_list_value(value, default_value, validator):
     """Validates string list attributes"""
 
-    if not isinstance(value, list) or not value:
+    if not isinstance(value, list) or value is None:
         return default_value
 
     accepted_values = validator.get("accepted_values")
