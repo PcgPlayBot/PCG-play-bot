@@ -1,6 +1,6 @@
 const STATS_BALLS_VALIDATOR = {
     "heavy_ball": {min: 100},
-    "feather_ball": {min: 0, max: 150},
+    "feather_ball": {min: 0, max: 100},
     "heal_ball": {min: 100},
     "fast_ball": {min: 100}
 };

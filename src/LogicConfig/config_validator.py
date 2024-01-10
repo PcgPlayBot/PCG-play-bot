@@ -116,8 +116,8 @@ config_validator = {
     },
     "stats_balls": {
         "heavy_ball": {
-            "default": 100,
-            "validator": {"type": "int", "min": 50}
+            "default": 200,
+            "validator": {"type": "int", "min": 100}
         },
         "feather_ball": {
             "default": 50,
