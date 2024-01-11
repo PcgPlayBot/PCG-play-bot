@@ -79,7 +79,7 @@ class TwitchLoginManager(QObject):
         self._web.move(qt_rectangle.topLeft())
 
         self._injection_worker = Worker(500)
-        self._timeout_worker = Worker(15 * 1000)
+        self._timeout_worker = Worker(30 * 1000)
 
         self._captured_display_name = ""
 

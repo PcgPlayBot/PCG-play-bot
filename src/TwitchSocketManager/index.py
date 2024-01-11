@@ -68,7 +68,7 @@ class TwitchSocketManager:
 
         while loading:
 
-            if datetime.now() - loading_started > timedelta(seconds=15):
+            if datetime.now() - loading_started > timedelta(seconds=30):
                 return self._on_disconnect()
 
             try:
