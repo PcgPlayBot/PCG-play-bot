@@ -295,6 +295,8 @@ class LogicDealer:
         shop_config = self._logic_config.shop[ball]
         purchased = False
 
+        sleep(randint(5, 10))  # We are talking too fast without this
+
         if not shop_config["buy_on_missing"]:
             purchased = False
 
