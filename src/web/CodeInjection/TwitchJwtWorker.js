@@ -12,9 +12,7 @@
     function sendJwt(jwt) {
 
         if (isLogged && backend_channel != null) {
-            backend_channel.get_jwt_callback(JSON.stringify({
-                    jwt: jwt,
-                }))
+            backend_channel.get_jwt_callback(JSON.stringify({jwt}))
         }
     }
 
@@ -63,14 +61,24 @@
         if (document.querySelector('[data-a-target="login-button"]') == null) {
 
             const dropButton = document.querySelector('[data-a-target="user-menu-toggle"]')
-            dropButton?.click()
 
-            const displayName = document.querySelector('[data-a-target="user-display-name"]')?.textContent
+            if (dropButton != null) {
 
-            if (displayName != null) {
-                isLogged = true
+                dropButton.click()
+
+                setTimeout(() => {
+
+                    const displayName = document.querySelector('[data-a-target="user-display-name"]')?.textContent
+
+                    if (displayName != null) {
+                        isLogged = true
+                    } else {
+                        backend_channel.login_error()
+                    }
+                }, 1000)
+
             } else {
-                backend_channel.login_error()
+                setTimeout(checkLogin, 500)
             }
         }
     }

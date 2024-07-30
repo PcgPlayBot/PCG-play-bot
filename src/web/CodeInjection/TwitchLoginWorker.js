@@ -19,14 +19,21 @@
         if (document.querySelector('[data-a-target="login-button"]') == null) {
 
             const dropButton = document.querySelector('[data-a-target="user-menu-toggle"]')
-            dropButton?.click()
 
-            const displayName = document.querySelector('[data-a-target="user-display-name"]')?.textContent
+            if (dropButton != null) {
 
-            if (displayName != null) {
+                dropButton.click()
 
-                if (backend_channel != null) backend_channel.login_success_callback(JSON.stringify({displayName}))
-                else setInterval(() => sendLoginSuccess(displayName), 1000)
+                setTimeout(() => {
+
+                    const displayName = document.querySelector('[data-a-target="user-display-name"]')?.textContent
+
+                    if (backend_channel != null) backend_channel.login_success_callback(JSON.stringify({displayName}))
+                    else setInterval(() => sendLoginSuccess(displayName), 1000)
+                }, 1000)
+
+            } else {
+                setTimeout(checkLoginState, 500)
             }
         }
     }
