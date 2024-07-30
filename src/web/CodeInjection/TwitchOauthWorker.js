@@ -15,10 +15,13 @@
     function getOauth() {
 
         const connectButton = document.querySelector("a.btn.btn-large.btn-primary");
-        console.log(connectButton)
+        const authorizeButton = document.querySelector("button.js-authorize");
 
         if (connectButton?.offsetParent != null) {
             connectButton.click()
+
+        } else if (authorizeButton != null) {
+            authorizeButton.click()
 
         } else {
 
