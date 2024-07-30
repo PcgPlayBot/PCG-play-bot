@@ -129,7 +129,6 @@ class MainApplication(QWidget):
 
             # Refresh pokemon JWT before it expires
             if self.poke_jwt is None or self.poke_jwt.exp - datetime.now() < timedelta(minutes=10):
-                print("Aqui", self.poke_jwt.exp)
                 self._get_twitch_jwt()
                 return
 
@@ -161,7 +160,7 @@ class MainApplication(QWidget):
     def _get_twitch_jwt(self):
         """Updates Twitch JWT for pokemon API"""
 
-        if self.bot_status != BOT_STATUS["STOPPED"]:
+        if self.bot_status != BOT_STATUS["STOPPED"] and self.connection_status != CONNECTION_STATUS["GETTING_JWT"]:
             self.connection_status = CONNECTION_STATUS["GETTING_JWT"]
             self.TwitchLoginManager.get_twitch_jwt()
 
