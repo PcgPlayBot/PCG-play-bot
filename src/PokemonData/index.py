@@ -314,7 +314,7 @@ def handle_last_spawn_data(server_data):
     data = {
         "spawn_date": parser.isoparse(server_data["event_time"]).astimezone(tz.tzlocal()),
         "pokedex_id": server_data["pokedex_id"],
-        "isEventSpawn": server_data["isEventSpawn"]
+        "isEventSpawn": server_data.get("isEventSpawn", False)
     }
 
     return data
