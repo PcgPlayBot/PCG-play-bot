@@ -6,7 +6,7 @@ const LANG_EN_US = {
 
     // Language and channel
     LANGUAGE: {
-        LABEL: "Idioma:",
+        LABEL: "Language:",
         PT_BR: "Português (Brasil)",
         ES_LA: "Español (Latinoamérica)",
         EN_US: "Imperialism (USA)"
