@@ -44,7 +44,7 @@ You can also compile the program from source following these steps:
     python lib_install.py
     ```
    
-Python version tested: 3.8
+Python version tested: 3.8, 3.12
    
 ## Contributing 
 This program was developed during vacations and is unlikely to be kept updated and functional. Therefore, feel free to submit pull requests and contribute to the open-source code. :blush:
