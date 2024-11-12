@@ -1,4 +1,4 @@
-PyQt6==6.6.1
-PyQtWebEngine==5.15.6
-python-dateutil==2.8.2
-requests==2.31.0
+PyQt6==6.7.1
+PyQt6-WebEngine==6.7.0
+python-dateutil~=2.9.0
+requests==2.32.3
